@@ -198,6 +198,38 @@
         "type": "github"
       }
     },
+    "mason": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1721170870,
+        "narHash": "sha256-F0qsl8AL0hyq3WSVIIkxG4OHOar+3xHLZZ3RrVlk2mY=",
+        "owner": "williamboman",
+        "repo": "mason.nvim",
+        "rev": "e2f7f9044ec30067bc11800a9e266664b88cda22",
+        "type": "github"
+      },
+      "original": {
+        "owner": "williamboman",
+        "repo": "mason.nvim",
+        "type": "github"
+      }
+    },
+    "mason-lspconfig": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1722813339,
+        "narHash": "sha256-UUnrMRWFeCylhj690pwTNJzf9FMbDlfuMnprxjsW4mA=",
+        "owner": "williamboman",
+        "repo": "mason-lspconfig.nvim",
+        "rev": "62360f061d45177dda8afc1b0fd1327328540301",
+        "type": "github"
+      },
+      "original": {
+        "owner": "williamboman",
+        "repo": "mason-lspconfig.nvim",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -281,6 +313,8 @@
         "decisive": "decisive",
         "flake-utils": "flake-utils",
         "flit": "flit",
+        "mason": "mason",
+        "mason-lspconfig": "mason-lspconfig",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim"
       }

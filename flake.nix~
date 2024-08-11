@@ -19,9 +19,28 @@
       url = "github:williamboman/mason.nvim";
       flake = false;
     };
-      mason-lspconfig = {
+    mason-lspconfig = {
       url = "github:williamboman/mason-lspconfig.nvim";
-      flake=false;
+      flake = false;
+    };
+    nvim-lspconfig = {
+      url = "github:neovim/nvim-lspconfig";
+      flake = false;
+
+    };
+    cmp-nvim-lsp = {
+      url = "github:hrsh7th/cmp-nvim-lsp";
+      flake = false;
+
+    };
+    nvim-lsp-file-operations = {
+      url = "github:antosha417/nvim-lsp-file-operations";
+      flake = false;
+    };
+
+    neodev = {
+      url = "github:folke/neodev.nvim";
+      flake = false;
     };
   };
   outputs = { flake-utils, nixpkgs, nixvim, ... } @inputs:

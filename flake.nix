@@ -15,14 +15,6 @@
       url = "github:ggandor/flit.nvim";
       flake = false;
     };
-    mason = {
-      url = "github:williamboman/mason.nvim";
-      flake = false;
-    };
-    mason-lspconfig = {
-      url = "github:williamboman/mason-lspconfig.nvim";
-      flake = false;
-    };
   };
   outputs = { flake-utils, nixpkgs, nixvim, ... } @inputs:
     flake-utils.lib.eachDefaultSystem

@@ -2,7 +2,6 @@
   imports = [
     ./coq.nix
     ./lintting.nix
-    ./mason.nix
   ];
 
   plugins = {
@@ -20,6 +19,7 @@
       servers = {
         bashls.enable = true;
         clangd.enable = true;
+        cssls.enable = true;
         docker-compose-language-service.enable = true;
         dockerls.enable = true;
         emmet-ls.enable = true;
@@ -52,7 +52,9 @@
           installCargo = false;
         };
         sqls.enable = true;
+        tailwindcss.enable = true;
         templ.enable = true;
+        tsserver.enable = true;
         typos-lsp.enable = true;
         yamlls.enable = true;
       };

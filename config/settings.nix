@@ -59,8 +59,8 @@ _: {
     # -- updatetime = 100;
     #
     # -- Backup -- I have power issues :/;
-    backup = true;
-    swapfile = true;
+    # backup = true;
+    # swapfile = true;
     # undodir = ''os.getenv("HOME") .. "/.cache/undodir"'';
     undofile = true;
 

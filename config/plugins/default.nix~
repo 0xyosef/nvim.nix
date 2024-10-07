@@ -1,8 +1,0 @@
-{ ... }: {
-  imports = [
-    ./ui
-    ./lsp
-    ./editor
-    ./mason.nix
-  ];
-}

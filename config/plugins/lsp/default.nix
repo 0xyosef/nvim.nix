@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }: {
   imports = [
-    ./coq.nix
+    # ./coq.nix
+    ./cmp.nix
     ./lintting.nix
   ];
 

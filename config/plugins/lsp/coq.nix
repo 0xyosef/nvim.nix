@@ -33,5 +33,6 @@ _: {
     };
 
     codeium-vim.enable = true;
+    
   };
 }

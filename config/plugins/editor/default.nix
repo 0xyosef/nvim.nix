@@ -7,6 +7,7 @@
     ./treesitter.nix
     ./csv.nix
     ./movement.nix
+    ./presence.nix
   ];
 
   plugins = {

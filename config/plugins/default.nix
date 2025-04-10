@@ -3,6 +3,6 @@
     ./ui
     ./lsp
     ./editor
-    ./f
+    ./ai
   ];
 }

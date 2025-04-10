@@ -26,7 +26,7 @@
     map("i", "jk", "<Esc>", {noremap = true})
     map("i", "KJ", "<Esc>", {noremap = true})
     map("i", "JK", "<Esc>", {noremap = true})
-map({'n', 'i', 'v'}, '<Esc>', '<Esc>:noh<CR>', { noremap = true, silent = true })
+
     -- Easy Resize
     map("n", "<M-h>", ":vertical resize -2<CR>", {noremap = true})
     map("n", "<M-j>", ":resize +2<CR>", {noremap = true})

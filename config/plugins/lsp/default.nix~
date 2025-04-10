@@ -1,7 +1,10 @@
 {
   imports = [
+<<<<<<< HEAD
     # ./coq.nix
-    # ./cmp.nix
+    ./cmp.nix
+=======
+>>>>>>> c2b2d64010b34ca49287a59ee0eda2ad2e704783
     ./lintting.nix
     ./autocomplete.nix
   ];

@@ -53,7 +53,7 @@
         yamlls.enable = true;
       };
     };
-    # lsp-format.enable = true;
+    lsp-format.enable = true;
     lsp-lines.enable = true;
     lspsaga = {
       enable = true;

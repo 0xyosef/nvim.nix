@@ -53,18 +53,9 @@
             '';
 
         };
-
-        # keymap = {
-        #   jump_to_mark = "<C-n>";
-        #   tab_complete = "<Tab>";
-        #   shift_tab_complete = "<S-Tab>";
-        #   complete = "<C-Space>";
-        #   abort = "<C-;>";
-        #   confirm = "<C-k>";
-        # };
       };
     };
-    codeium-vim.enable = true;
+    # codeium-vim.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;

@@ -1,6 +1,5 @@
 {
   imports = [
-    # ./coq.nix
     ./cmp.nix
     ./lintting.nix
     # ./autocomplete.nix
@@ -53,7 +52,7 @@
         yamlls.enable = true;
       };
     };
-    lsp-format.enable = true;
+    # lsp-format.enable = true;
     lsp-lines.enable = true;
     lspsaga = {
       enable = true;

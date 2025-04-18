@@ -1,5 +1,0 @@
-{ ... }: {
-  imports = [
-    ./copilot-cmp.nix
-  ];
-}

@@ -1,18 +1,19 @@
 {
   plugins = {
+    # windsurf-vim.enable = true;
     cmp = {
       enable = true;
       settings = {
         sources = [
-          { name = "nvim_lsp"; }
-          { name = "buffer"; }
-          { name = "path"; }
+          {name = "nvim_lsp";}
+          {name = "buffer";}
+          {name = "path";}
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
           "<S-Tab>" = "cmp.mapping.close()";
           "<CR>" =
-            # lua 
+            # lua
             ''
               function(fallback)
                 local line = vim.api.nvim_get_current_line()
@@ -51,11 +52,18 @@
                 end
               end
             '';
-
         };
+
+        # keymap = {
+        #   jump_to_mark = "<C-n>";
+        #   tab_complete = "<Tab>";
+        #   shift_tab_complete = "<S-Tab>";
+        #   complete = "<C-Space>";
+        #   abort = "<C-;>";
+        #   confirm = "<C-k>";
+        # };
       };
     };
-    # codeium-vim.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;

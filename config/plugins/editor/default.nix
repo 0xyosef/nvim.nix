@@ -7,6 +7,8 @@
     ./treesitter.nix
     ./csv.nix
     ./ai.nix
+    ./copilot-cmp.nix
+    ./presence.nix
   ];
 
   plugins = {

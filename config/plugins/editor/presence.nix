@@ -1,7 +1,6 @@
 _: {
-
-  plugins = {
-    presence-nvim.enable = true;
+  plugins.presence-nvim = {
+    enable = true;
     showTime = true;
     neovimImageText = "NVIM";
     editingText = "Editing %s";

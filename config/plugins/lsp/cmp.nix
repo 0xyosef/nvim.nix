@@ -1,6 +1,5 @@
 {
   plugins = {
-    # windsurf-vim.enable = true;
     cmp = {
       enable = true;
       settings = {
@@ -64,6 +63,7 @@
         # };
       };
     };
+    windsurf-vim.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;

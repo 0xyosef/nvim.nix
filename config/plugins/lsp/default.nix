@@ -1,8 +1,8 @@
 {
   imports = [
-    ./cmp.nix
+    # ./cmp.nix
     ./lintting.nix
-    # ./autocomplete.nix
+    ./autocomplete.nix
   ];
 
   plugins = {

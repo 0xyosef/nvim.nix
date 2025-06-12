@@ -34,6 +34,7 @@
   '';
 
   plugins = {
+    windsurf-vim.enable = true;
     avante = {
       enable = true;
       settings = {
@@ -45,7 +46,7 @@
             endpoint = "https://api.groq.com/openai/v1/";
             model = "qwen-qwq-32b";
             max_tokens = 8192;
-            temperature=0.6;
+            temperature = 0.6;
           };
           "qwen2.5-coder" = {
             __inherited_from = "openai";

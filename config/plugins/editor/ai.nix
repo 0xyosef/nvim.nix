@@ -1,40 +1,51 @@
 {pkgs, ...}: {
-  extraPlugins = [pkgs.vimPlugins.minuet-ai-nvim];
-  extraConfigLua = ''
-    require('minuet').setup {
-      provider = 'openai_fim_compatible',
-      n_completions = 3,
-      context_window = 8192,
-      throttle = 800,
-      debounce = 300,
-      virtualtext = {
-        auto_trigger_ft = {"*"},
-        auto_trigger_ignore_ft = {"NvimTree", "DressingInput"},
-        keymap = {
-          next= "<C-]>";
-          prev= "<C-[>";
-        };
-      },
-      notify=false,
-      add_single_line_entry = false,
-      provider_options = {
-        openai_fim_compatible = {
-          api_key = 'TERM',
-          name = 'qwen2.5-coder',
-          end_point = 'http://localhost:11434/v1/completions',
-          model = 'qwen2.5-coder:3b-base',
-          optional = {
-            max_tokens = 256,
-            top_p = 0.9,
-            stop = { '<|endoftext|>' },
-          },
-        },
-      },
-    }
-  '';
-
   plugins = {
-    windsurf-vim.enable = true;
+    minuet = {
+      enable = true;
+      settings = {
+        provider = "openai_fim_compatible";
+        n_completions = 3;
+        context_window = 8192;
+        throttle = 800;
+        debounce = 300;
+        virtualtext = {
+          auto_trigger_ft = ["*"];
+          auto_trigger_ignore_ft = ["NvimTree" "DressingInput"];
+          keymap = {
+            next = "<C-]>";
+            prev = "<C-[>";
+          };
+        };
+        notify = false;
+        add_single_line_entry = false;
+        provider_options = {
+          openai_fim_compatible = {
+            api_key = "TERM";
+            name = "qwen2.5-coder";
+            end_point = "http://localhost:11434/v1/completions";
+            model = "qwen2.5-coder:3b-base";
+            optional = {
+              max_tokens = 256;
+              top_p = 0.9;
+              stop = ["<|endoftext|>"];
+            };
+          };
+        };
+      };
+    };
+    windsurf-nvim = {
+      enable = true;
+      settings = {
+        enable_cmp_source = true;
+        workspace_root = {
+          use_lsp = true;
+        };
+        key_bindings = {
+          next = "<C-]>";
+          prev = "<C-[>";
+        };
+      };
+    };
     avante = {
       enable = true;
       settings = {

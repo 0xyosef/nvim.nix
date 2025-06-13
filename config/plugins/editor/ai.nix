@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   plugins = {
     minuet = {
       enable = true;
@@ -50,7 +50,7 @@
       enable = true;
       settings = {
         provider = "qwq";
-        vendors = {
+        providers = {  # ← renamed from vendors to providers
           qwq = {
             __inherited_from = "openai";
             api_key_name = "cmd:cat /run/secrets/api-keys/groq";
@@ -71,3 +71,4 @@
     };
   };
 }
+

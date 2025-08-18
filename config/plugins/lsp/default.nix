@@ -2,6 +2,7 @@
   imports = [
     ./lintting.nix
     ./autocomplete.nix
+    ./cmp.nix
   ];
 
   lsp = {
